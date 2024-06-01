@@ -1,0 +1,260 @@
+:root {
+    --main-color: #d3ad7f;
+    --back: #13131a;
+    --bg: #010103;
+    border: 0.1rem solid rgba(255,255,2550.3);
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}
+
+body {
+    background-color: #010103;
+}
+
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header {
+    position: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border: 0.1rem solid rgba(255,255,2550.3);
+    background-color: #010103;
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5;
+}
+
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.navbar a:hover {
+    color: #d3ad7f;
+    border-bottom: 0.1rem solid #d3ad7f;
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.navbar {
+    font-family: sans-serif;
+}
+
+.icones img {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.icones img:hover {
+    width: 40px;
+    height: 40px;
+}
+
+.btn{
+    background: #d3ad7f;
+    color: #fff;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display:inline-block;
+}
+
+.btn:hover{
+    letter-spacing: 0.1rem;                                      /* faz com que o texto do buuton tenha um espaçamento */
+}
+
+.home-container {
+    background: url("./img/home-img.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.home-container section{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.content {
+    max-width: 60rem; 
+}
+
+.content h3 {             
+    color: #fff;  
+    font-size: 6rem;
+    font-family: sans-serif;
+}
+
+.content p {                  
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 100;         
+    line-height: 1.8;           
+    padding: 1rem 0;  
+    font-family: sans-serif;        
+}
+
+
+.title{
+    font-size: 4rem;
+    color: #d3ad7f;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 4rem;                     /* distanciamento do titulo da imagem */
+    font-family: sans-serif;
+}
+
+.title span{
+    color: #fff;
+    text-transform: uppercase;             /* faz com que o texto fique do mesmo tamanho */
+    font-family: sans-serif;
+}
+.Sobre .row{
+    display: flex;
+    align-items: center;                   /* faz com que o texto fique do lado da img */
+    background-color:#13131a;            /* faz com que o fundo da página fique mais armonico */
+    gap: 1.5rem;                            /* faz com que o texto de um espaçamento */
+    text-transform: uppercase;
+}
+
+.Sobre .row .content{
+    padding: 2rem;
+}
+
+.Sobre .row .content h3{
+    font-size: 3rem;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.Sobre .row .content p{
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 1rem 0;
+    line-height: 1.8;                                                /* O distanciamento de uma linha para a outra no texto  */
+    font-family: sans-serif;
+}
+
+/*SECTION DOS MENUS SOBRE NOS */
+
+.box-container{
+    display: grid;                                                    /* Serve para organizar vários itens em tabelas ou cards*/
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));      
+    gap: 1.5rem;
+}
+
+.menu .box-container .box{
+    text-align: center;
+    border: 0.1rem solid rgba(255,255,2550.3);                          /* Criando uma bordar em volta dos cardis*/
+    padding: 5rem;
+    cursor: pointer;                                                     /*Ao passar o mouse a setinha muda para maozinha*/ 
+}
+
+.menu .box-container .box:hover {
+    background-color: #fff;                                            /*Ao passar o mousedentro dos cards fica tudo branco */
+    
+
+}
+
+.menu .box-container .box img{
+    height: 10rem;
+}
+
+.menu .box-container .box h3{
+    color: #fff;
+    font-size: 2rem;
+    font-family: sans-serif;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .preço{
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+    font-family: sans-serif;
+}
+
+.menu .box-container .box .preço span{
+    font-size: 1.5rem;
+    text-decoration: line-through;                                          /* Criando uma linha cortando os preços. */
+    font-weight: 100;
+}
+
+.menu .box-container .box:hover>*{
+    color:#13131a;                                                         /* obs, ao passar o mouse nos cards ficará tudo branco, e os preços na cor preto */
+}
+
+.review .box-container .box{
+    border: 0.1rem solid rgba(255,255,2550.3);
+    text-align: center;
+    padding: 3rem 2rem;
+
+}
+
+.review .box-container .box p{
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 2rem 0;
+    line-height: 1.8;
+    font-weight: lighter;
+}
+
+.review .box-container .box h3{
+    color:#fff;
+    font-size: 2rem;
+    font-family: sans-serif;
+    margin: 1rem 0;
+    
+}
+
+.review .box-container .box .user{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+
+.address{
+    display: flex;
+    align-items: center;
+    flex-direction: column;                                                           /* colocar o texto em cima do carde */
+}
+
+.footer{
+    text-align: center;
+}
+
+.footer .share{
+    padding: 1rem 0;    
+}
+
+.footer .share img{
+    margin: 0.3rem;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.footer .share img:hover{
+    background-color: #d3ad7f;
+}
